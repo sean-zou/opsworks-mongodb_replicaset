@@ -1,4 +1,8 @@
-site :opscode
+source "https://supermarket.chef.io"
 
-cookbook 'mongodb'
+cookbook 'apt'
+cookbook 'runit'
+cookbook 'user'
 cookbook 'nscd'
+cookbook 'mongodb3'
+

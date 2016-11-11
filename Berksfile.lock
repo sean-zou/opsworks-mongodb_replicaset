@@ -1,0 +1,23 @@
+DEPENDENCIES
+  apt
+  mongodb3
+  nscd
+  runit
+  user
+
+GRAPH
+  apt (5.0.0)
+    compat_resource (>= 12.14.7)
+  compat_resource (12.16.2)
+  mongodb3 (5.3.0)
+    apt (>= 0.0.0)
+    runit (~> 1.7.0)
+    user (>= 0.0.0)
+    yum (>= 0.0.0)
+  nscd (4.1.0)
+    compat_resource (>= 0.0.0)
+  packagecloud (0.2.5)
+  runit (1.7.8)
+    packagecloud (>= 0.0.0)
+  user (0.5.1)
+  yum (4.1.0)
